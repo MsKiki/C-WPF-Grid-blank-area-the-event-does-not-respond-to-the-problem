@@ -1,0 +1,17 @@
+<!--此Grid区域内的MouseEnter事件不起作用-->
+<Grid Height="490" Width="410" >
+      <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseEnter">
+              <i:InvokeCommandAction Command="{Binding CommandMouseEnterImgData}" />
+          </i:EventTrigger>
+      </i:Interaction.Triggers>
+</Grid>
+
+<!--此Grid区域内的MouseEnter事件起作用-->
+<Grid Height="490" Width="410" Background="Transparent">
+      <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseEnter">
+              <i:InvokeCommandAction Command="{Binding CommandMouseEnterImgData}" />
+          </i:EventTrigger>
+      </i:Interaction.Triggers>
+</Grid>
